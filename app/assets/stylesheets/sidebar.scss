@@ -9,10 +9,10 @@
 
 .sidebar-wrapper #menubox {
   position: absolute;
-  left: -135px;
+  // left: -135px;
   width: 230px;
   height: 100%;
-  background: #7b9472
+  background: #ffffff
 }
 
 .sidebar-wrapper #menubox .logo {
@@ -23,4 +23,65 @@
 
 .sidebar-wrapper #menubox .logo #logo{
   width: 73px;
+}
+
+.sidebar-wrapper ul#menu {
+  bottom: 10px;
+  left: 0;
+  margin: 8px 0 0 2px;
+  padding: 0;
+  position: absolute;
+  width: 105px;
+}
+.sidebar-wrapper #menubox li.introduction {
+  margin: 0 -35px 0 0;
+  display: block;
+}
+
+.sidebar-wrapper #menubox #introduction {
+  text-indent: -1000px;
+  background: url(/images/mu_area.gif) no-repeat;
+}
+
+.sidebar-wrapper #menubox .about {
+  text-indent: -1000px;
+  background: url(/images/mu_area.gif) no-repeat;
+}
+
+.sidebar-wrapper #menubox li a {
+  display: block;
+  width: 94px;
+  height: 38px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+.sidebar-wrapper ul#menu ul {
+  padding-left: 0;
+}
+
+.sidebar-wrapper ul#menu ul li {
+	display: block;
+	margin: 5px 10px;
+	padding: 0 0 0 15px;
+	background: #FFFFFF;
+	font-size: 11px;
+}
+
+.sidebar-wrapper ul#menu ul li:hover,
+.sidebar-wrapper ul#menu ul li.active {
+	background: url(/images/menu_dot.gif) no-repeat 0 2px;
+}
+
+.sidebar-wrapper ul#menu ul li a {
+	width: auto;
+	height: auto;
+	color: #c9c3bd;
+	padding: 3px 0px 2px 10px;
+}
+
+.sidebar-wrapper ul#menu li a:hover {}
+.sidebar-wrapper ul#menu ul li a:hover,
+.sidebar-wrapper ul#menu ul li.active a {
+	background-color: #c9c3bd;
+	color: #FFFFFF;
 }
