@@ -33,8 +33,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 gem 'figaro'
 gem 'bootstrap-sass'
+
+gem "capistrano-passenger"
 
 group :production do
   gem 'pg'
