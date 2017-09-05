@@ -34,9 +34,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'figaro'
+gem 'bootstrap-sass'
 
 group :production do
   gem 'pg'
+end
+
+group :development do
+  gem "capistrano", "~> 3.4"
+  gem "capistrano-rvm"
+  gem "capistrano-rails"
 end
 
 group :development, :test do
