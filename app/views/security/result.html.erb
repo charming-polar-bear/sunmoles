@@ -1,0 +1,163 @@
+<body style="padding-bottom:50px;" class="vsc-initialized">
+<div class="c" style="position:relative;width:100%;min-height:100%;">
+	<div style="text-align:center;">
+	<br>
+<img src="images/logo.jpg" alt="" width="20%">
+</div>
+    <br>
+	<div style="text-align:center;">
+
+<p style="font-size:30px;font-weight:bold;color:black;line-height:35px;text-align:center;">
+
+		공식정품
+
+		</p>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+	    <hr data-am-widget="divider" style="" class="am-divider am-divider-default am-no-layout">
+
+	<form class="am-form">
+      <fieldset>
+        <div class="am-form-group">
+
+          <p id="fw_result" style="color: rgb(0, 0, 0); text-align: center;">입력하신 일련번호는 존재하지 않습니다.<br><br>Please note the security code does not exist.<br><br>您好，您所查询的防伪码不存在!</p>
+		         </div>
+
+      </fieldset>
+    </form>
+
+    <hr data-am-widget="divider" style="" class="am-divider am-divider-default am-no-layout">
+
+
+</div>
+
+    <script src="Plugin/AmazeUI/js/jquery.min.js"></script>
+   <script src="Plugin/AmazeUI/js/amazeui.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		var public_gps='';
+		var public_area='';
+		var code = '';
+		function showqr(){
+			 var $modal = $('#my-alert-qr');
+			 $modal.modal('open');
+		}
+		$(document).ready(function () {
+
+			 var code = getParam('c');
+			if (code==null) {
+				$('#fw_result').html('请重新扫描防伪标签上面的二维码');
+				return false;
+			}else{
+				$('#fw_result').html("正在查询中,请稍等...");
+				getLocation();
+			}
+		});
+        function getLocation() {
+            var options = {
+                enableHighAccuracy: false,
+                timeout: 3000,
+                maximumAge: 1000
+            }
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError, options);
+            } else {
+                public_gps = '';
+                public_area = '';
+                querycode();
+            }
+        }
+        function showError(error) {
+            public_gps = '';
+            public_area = '';
+            querycode();
+        }
+		function showPosition(position) {
+            public_gps = position.coords.latitude + "," + position.coords.longitude;
+            if (public_gps.length <= 0) {
+                public_gps = '';
+                public_area = '';
+                querycode();
+            }
+            $.ajax({
+                type: 'get',
+                url: 'http://apis.map.qq.com/ws/geocoder/v1',
+                dataType: 'jsonp',
+                data: {
+                    key: "RWUBZ-POR3U-DMPVL-4AQCJ-Z26D2-3MF3Y",
+                    location: public_gps,
+                    get_poi: "0",
+                    coord_type: "1",
+                    output: "jsonp"
+                },
+                success: function (data, textStatus) {
+
+                    if (data.status == 0) {
+                        public_area = data.result.address_component.province + ',' + data.result.address_component.city;
+                        querycode();
+                    } else {
+                        public_area = '';
+                        querycode();
+                    }
+                },
+                error: function () {
+                    public_area = '';
+                    querycode();
+                }
+            });
+
+        }
+
+	function querycode(){
+            var code=getUrlParam('c');
+			var url = "http://china3-15.com/module/jsonp_wx.ashx?callback=?";
+			var data = { c: code, key: "347ebf8d172e977ad09d583a6687cd4f",gps:public_gps,address:public_area };
+			$.getJSON(url, data, function (backdata) {
+				var result=backdata.result;
+
+				if(result.indexOf('你好')>-1)
+				{
+					/**这是正品显示的内容**/
+					$('#fw_result').html("입력하신 일벽하신 일련번호의 제품은 SUNMOLES 정품입니다.<br/><br/>Vaild! Confirmed the official original SUNMOLES product.<br/><br/>您输入的序列号对应的产品是本公司生产的官方正品。").css({'color':'#000','text-align':'center'});
+
+				}
+				else if(result.indexOf('第一次查询')>-1)
+				{
+					/**重复查询的提示**/
+					$('#fw_result').html("입력하신 위조방지번호는 이미 인증을 시도한번호로 고객님께서는 유사품에 주의하시길바랍니다.<br/><br/>Please note the security code has been checked, Beware of imitations.<br/><br/>您好，您所查询的防伪码已被查询过，如果您不是第一次查询请谨防假冒!").css({'color':'#000','text-align':'center'});
+					$("#fangwei_repeal").show();
+					$("#fangwei_repeal").attr("href","Detail.html?c="+code);
+				}
+				else{
+					/**这是假货显示的内容**/
+					$('#fw_result').html("입력하신 일련번호는 존재하지 않습니다.<br/><br/>Please note the security code does not exist.<br/><br/>您好，您所查询的防伪码不存在!").css({'color':'#000','text-align':'center'});
+				}
+
+
+
+			});
+		}
+
+    getUrlParam = function(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+
+
+    </script>
+
+
+
+</body>
