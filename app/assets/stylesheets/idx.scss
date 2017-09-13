@@ -1,0 +1,59 @@
+.idx {
+	height: 760px;
+}
+.idx .mainbg {
+	height: 900px;
+}
+.idx .mainbg img {
+	min-width: 1268px;
+	_width:expression(document.body.clientWidth < 1268 ? "1268px" : "auto");
+	min-height: 900px;
+	_height:expression(this.scrollHeight < 900 ? "900px" : "auto");
+}
+.idx .hline {
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+	margin-top: -245px;
+	height: 560px;
+	display: block;
+	z-index: 3;
+	text-align: center;
+}
+.idx .hline img {
+    vertical-align: middle;
+}
+.idx .hline img.arrow {
+	position: absolute;
+	bottom: 160px;
+	left: 50%;
+	margin-left: -24px;
+	text-align: center;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+.idx .hline a {
+	position: absolute;
+	display: block;
+	left: 50%;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	text-decoration:none;
+	cursor: pointer;
+	z-index: 100;
+	/*background: #f00;*/
+}
+
+.idx .hline a.unit1 {bottom: 128px;margin-left: -24px;}
+.idx .hline a.unit2 {bottom: 108px;margin-left: -23px;}
+.idx .hline a.unit3 {bottom: 143px;margin-left: -24px;}
+.idx .hline a.unit4 {bottom: 140px;margin-left: -23px;}
+.idx .hline a.unit5 {bottom: 45px;margin-left: -23px;}
+.idx .hline a.unit6 {bottom: 141px;margin-left: -23px;}
+.idx .hline a.unit7 {bottom: 145px;margin-left: -24px;}
+.idx .hline a.unit8 {bottom: 150px;margin-left: -23px;}
+.idx .hline a.unit9 {bottom: 162px;margin-left: -23px;}
+.idx .hline a.unit10 {bottom: 143px;margin-left: -23px;}

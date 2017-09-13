@@ -1,0 +1,144 @@
+.unit1 {
+	// height: 1340px;
+}
+.unit1 .mainbg {
+	height: 1340px;
+}
+.unit1 .mainbg img {
+	min-width: 775px;
+	_width:expression(document.body.clientWidth < 775 ? "775px" : "auto");
+	min-height: 1340px;
+	_height:expression(this.scrollHeight < 1340 ? "1340px" : "auto");
+}
+.unit1 .ptbg {
+    position: absolute;
+    top: 20px;
+    left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 3;
+}
+.unit1 .ptslide {
+	position: absolute;
+	top: 260px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	display: block;
+	z-index: 3;
+}
+.unit1 .ptslide img {
+    vertical-align: bottom;
+}
+.unit1 .ptslide .bgbox {
+    position: relative;
+    width: 910px;
+    height: 470px;
+    margin: 0 auto 40px auto;
+    padding: 40px 0 0 0;
+	background: url(/images/area01_pt_bg.png) repeat;
+}
+.unit1 .ptslide .bgbox .fresh {
+    position: absolute;
+    top: -45px;
+    right: -45px;
+	z-index: 3;
+}
+.unit1 .ptslide ol {
+	float: left;
+    left: 52%;
+    position: relative;
+    text-align: center;
+    margin: 0 0 40px 0;
+	min-width:900px;
+	_width:expression(document.body.clientWidth < 900 ? "900px" : "auto");
+}
+.unit1 .ptslide ol li {
+    float: left;
+    position: relative;
+    right: 50%;
+    text-align: center;
+    margin: 0 18px 0 0;
+    *display: inline;
+}
+.unit1 .ptslide ol li.last {
+    margin: 0;
+}
+.unit1 .ptslide ol li img {}
+.unit1 .ptslide ol li .add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 63px;
+    height: 63px;
+    margin: -31px 0 0 -31px;
+	background: url(/images/icon-zoom.png) no-repeat;
+	z-index: 1;
+}
+.unit1 .ptslide ol li .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 202px;
+    height: 432px;
+	background: #000;
+	filter:alpha(opacity=0);
+	-moz-opacity:00;
+	opacity: 0;
+}
+.unit1 .contxt {
+	position: absolute;
+	bottom: 150px;
+	left: 10%;
+	display: block;
+	right: 10%;
+	font: 12px/18px "Gill Sans MT";
+	color: #968673;
+	z-index: 2;
+    margin: 0 auto;
+	max-width: 900px;
+	_width:expression(document.body.clientWidth > 900 ? "900px" : "auto");
+	z-index: 3;
+}
+/* IE9 */
+:root .unit1 .contxt {
+    width: 900px \0/IE9;
+}
+.unit1 .contxt .contxthd,
+.unit1 .contxt .contxtbd,
+.unit1 .contxt .contxtft {
+    margin: 0 0 10px 0;
+	padding: 0 8px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.unit1 .contxt .contxthd {
+    margin: 0 0 5px 0;
+}
+.unit1 .contxt .left {
+    float: left;
+	width: 47%;
+}
+.unit1 .contxt .right  {
+    float: right;
+	width: 47%;
+}
+.unit1 .contxt .contxthd img {
+    position: relative;
+    left: -8px;
+}
+.unit1 .contxt h1 {
+    margin: 0 0 5px 0;
+	font-size: 16px;
+	font-weight: normal;
+}
+.unit1 .ptslide .viewport {
+	height: 410px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	width: 905px;
+}

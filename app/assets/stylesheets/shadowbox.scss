@@ -1,0 +1,15 @@
+#sb-container {position: fixed;margin: 0;padding: 0;top: 0;left: 0;text-align: left;visibility: hidden;display: none;z-index: 1000000;}
+#sb-overlay {position: relative;height: 100%;width: 100%;}
+#sb-wrapper {position: absolute;visibility: hidden;background: #000;margin: 20px 0 0 0;}
+#sb-bg {}
+#sb-wrapper-inner {position: relative;overflow: hidden;}
+#sb-body {position: relative;height: 100%;background: #000;}
+#sb-body img {border: none;}
+#sb-body-inner {position: absolute;height: 100%;width: 100%;}
+#sb-player.html {height: 100%;overflow: auto;}
+#sb-loading {position: relative;height: 100%;color: #fff;background: #000;}
+#sb-loading-inner {position: absolute;top: 50%;width: 100%;text-align: center;font: 12px/18px Arial;}
+#sb-loading-inner span {background: url(/images/loading.gif) no-repeat;padding-left: 36px;height: 32px;line-height: 32px;display: inline-block;}
+#sb-nav {position: absolute;top: -20px;right: -20px;z-index: 10;}
+#sb-nav a {display: block;height: 41px;width: 40px;cursor: pointer;}
+#sb-nav-close {background: url(/images/icon-close.png) no-repeat 0 0;}
