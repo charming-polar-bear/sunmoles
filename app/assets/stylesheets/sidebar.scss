@@ -25,6 +25,15 @@
   width: 73px;
 }
 
+.sidebar-wrapper #menubox .logo-footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 95px;
+  height: 200px;
+  display: block;
+}
+
 .sidebar-wrapper ul#menu {
   bottom: 10px;
   left: 0;
@@ -33,19 +42,17 @@
   position: absolute;
   width: 105px;
 }
-.sidebar-wrapper #menubox li.introduction {
+.sidebar-wrapper #menubox li {
   margin: 0 -35px 0 0;
   display: block;
 }
 
 .sidebar-wrapper #menubox #introduction {
   text-indent: -1000px;
-  background: url(/images/mu_area.gif) no-repeat;
 }
 
 .sidebar-wrapper #menubox .about {
   text-indent: -1000px;
-  background: url(/images/mu_area.gif) no-repeat;
 }
 
 .sidebar-wrapper #menubox li a {
