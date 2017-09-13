@@ -1,0 +1,137 @@
+.unit2 {
+	height: 920px;
+}
+.unit2 .mainbg {
+	height: 920px;
+}
+.unit2 .mainbg img {
+	min-width: 828px;
+	_width:expression(document.body.clientWidth < 828 ? "828px" : "auto");
+	min-height: 920px;
+	_height:expression(this.scrollHeight < 920 ? "920px" : "auto");
+}
+.unit2 .contxt {
+	position: absolute;
+	bottom: 120px;
+	left: 10%;
+	display: block;
+	right: 10%;
+	font: 12px/18px "Gill Sans MT";
+	color: #968673;
+	z-index: 2;
+    margin: 0 auto;
+	max-width: 900px;
+	_width:expression(document.body.clientWidth > 900 ? "900px" : "auto");
+}
+:root .unit2 .contxt {
+    width: 900px \0/IE9;
+}
+.unit2 .contxt .contxthd,
+.unit2 .contxt .contxtbd,
+.unit2 .contxt .contxtft {
+    margin: 0 0 10px 0;
+	padding: 0 8px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.unit2 .contxt .contxthd {
+    margin: 0 0 5px 0;
+}
+.unit2 .contxt .left {
+    float: left;
+	width: 47%;
+}
+.unit2 .contxt .right  {
+    float: right;
+	width: 47%;
+}
+.unit2 .contxt .contxthd img {
+    position: relative;
+    left: -8px;
+}
+.unit2 .contxt h1 {
+    margin: 0 0 5px 0;
+	font-size: 16px;
+	font-weight: normal;
+}
+.unit2 .ptbg {
+    position: absolute;
+    top: 30px;
+    left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 3;
+}
+.unit2 .ptslide {
+	position: absolute;
+	top: 95px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	display: block;
+	z-index: 3;
+}
+.unit2 .ptslide .viewport {
+	height: 489px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	width:100%; /* for slider */
+}
+.unit2 .viewport ul.overview {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.unit2 .viewport ul.overview li {
+	float: left;
+	height: 489px;
+	text-align: center;
+	width: 300px;
+}
+/* slider numeric controls */
+ol#controls{
+	float: left;
+	position: relative;
+	top: -40px;
+	left: 50%;
+	text-align: center;
+}
+ol#controls li{
+	float: left;
+	position: relative;
+	right: 50%;
+	text-align: center;
+}
+ol#controls li a{
+    display: block;
+    width: 13px;
+    height: 13px;
+    text-indent: -10000px;
+    margin: 0 10px;
+	background: url(/images/pg_n01.png) no-repeat;
+}
+ol#controls li.current a{
+	background: url(/images/pg_n01_v.png) no-repeat;
+}
+
+.unit2 .ptslide ul.deep li a {
+	background: url(/images/pg_n01.png) no-repeat;
+	padding: 8px 16px;
+}
+.unit2 .ptslide ul.deep li.ui-tabs-selected a {
+	background: url(/images/pg_n01_v.png) no-repeat;
+	padding: 8px 16px;
+}
+.unit2 .ptslide ul.light li a {
+	background: url(/images/pg_n02.png) no-repeat;
+	padding: 8px 16px;
+}
+.unit2 .ptslide ul.light li.ui-tabs-selected a {
+	background: url(/images/pg_n02_v.png) no-repeat;
+	padding: 8px 16px;
+}
