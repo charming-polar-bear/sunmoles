@@ -111,3 +111,49 @@
     background: url(/images/pg_n01_v.png) no-repeat;
   }
 }
+
+.production .contxt {
+	position: absolute;
+	bottom: 33px;
+	left: 10%;
+	display: block;
+	right: 10%;
+	font: 12px/18px "Gill Sans MT";
+	color: #968673;
+	z-index: 2;
+    margin: 0 auto;
+	max-width: 900px;
+	_width:expression(document.body.clientWidth > 900 ? "900px" : "auto");
+}
+:root .production .contxt {
+    width: 900px \0/IE9;
+}
+.production .contxt .contxthd,
+.production .contxt .contxtbd,
+.production .contxt .contxtft {
+    margin: 0 0 10px 0;
+	padding: 0 8px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.production .contxt .contxthd {
+    margin: 0 0 5px 0;
+}
+.production .contxt .left {
+    float: left;
+	width: 47%;
+}
+.production .contxt .right  {
+    float: right;
+	width: 47%;
+}
+.production .contxt .contxthd img {
+    position: relative;
+    left: -8px;
+}
+.production .contxt h1 {
+    margin: 0 0 5px 0;
+	font-size: 16px;
+	font-weight: normal;
+}

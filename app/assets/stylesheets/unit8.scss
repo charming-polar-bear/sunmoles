@@ -1,0 +1,32 @@
+.unit8 #hline {
+    left: 10%;
+    position: absolute;
+}
+
+.unit8 .contxt {
+	position: absolute;
+	// bottom: 550px;
+	top: 270px;
+	left: 10%;
+	display: block;
+	right: 10%;
+	font: 18px "Gill Sans MT";
+	color: #968673;
+	z-index: 2;
+	max-width: 600px;
+	_width:expression(document.body.clientWidth > 900 ? "900px" : "auto");
+	z-index: 3;
+}
+/* IE9 */
+:root .unit8 .contxt {
+    width: 900px \0/IE9;
+}
+.unit8 .contxt .contxthd,
+.unit8 .contxt .contxtbd,
+.unit8 .contxt .contxtft {
+    margin: 0 0 10px 0;
+	padding: 0 8px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
