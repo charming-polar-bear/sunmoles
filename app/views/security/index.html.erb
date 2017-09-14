@@ -1,0 +1,73 @@
+<section style="background-color: #fff; height: 100%;">
+
+    <div style="text-align:center;">
+        <br>
+        <img src="images/logo.jpg" alt="" width="20%">
+    </div>
+    <br>
+    <div class="container">
+        <div>
+
+            <p style=" font-size:30px;font-weight:bold;color:black;line-height:35px;text-align:center;">
+
+                공식인증
+
+            </p>
+            <p style="font-size:16px;font-weight:bold;color:#be5631;line-height:5px;text-align:center;">OFFICIAL ORIGINAL CERTIFICATION</p>
+            <p style="font-size:16px;font-weight:bold;color:#be5631;line-height:15px;text-align:center;">官方认证</p>
+
+            <p style=" font-size:15px;color:black;line-height:10px;text-align:center;">SUNMOLES의 상품은 위조방지번호로
+            </p>
+            <p style=" font-size:15px;color:black;line-height:15px;text-align:center;">진품을 확인 하실 수 있습니다.</p>
+            <p style=" font-size:12px;color:black;line-height:15px;text-align:center;">Please input your serial number above Security Code to verify Official Original SUNMOLES Product.</p>
+            <p style="text-align:center;font-size:12px;color:black;line-height:15px;">可以用SUNMOLES产品贴有的防伪码下方序列号确认。</p>
+
+            <br>
+            <br>
+            <p style="text-align:center;font-size:11px;color:black;line-height:15px;">일련번호를 입력하세요./ ENTER THE SERIAL NUMBER BELOW./输入序列号。</p>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row-fluid show-grid">
+            <div class="span12">
+                <form class="well form-search inputcode_back">
+                    <input type="text" id="txt_code" class="input-medium search-query inputcode" style="font-size:14px;" placeholder="在此输入防伪编码" maxlength="24">
+                    <button type="button" class="btn btn-large btn-primary " style="font-family:'Microsoft Yahei'" onclick="querycode()">
+
+                        <i class="icon-search icon-white"></i>확인</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br><br>
+        <br><br>
+        <br>
+        <script src="js/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            function querycode() {
+                var $modal = $('#my-alert');
+                var code = $('#txt_code').val();
+                if (code.length <= 0) {
+                    $('#tip_result').text('请输入您所查询的防伪编码SUNMOLES의 상품은 방위번호로 진품을 확인하실수있습니다.');;
+                    $modal.modal('open');
+                    return false;
+                }
+                var reg = new RegExp("^[0-9]*$");
+                if (!reg.test(code)) {
+                    $('#txt_code').val('');
+                    $('#tip_result').text('输入的防伪码不正确');;
+                    $modal.modal('open');
+                    return false;
+                }
+                window.location.href = "security.html?c=" + code;
+            }
+        </script>
+
+        <hr>
+
+    </div>
+</section>
