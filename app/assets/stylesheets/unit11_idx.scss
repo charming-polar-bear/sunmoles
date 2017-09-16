@@ -1,0 +1,30 @@
+.unit11_idx {
+	.ptbg {
+		position: absolute;
+		top: 26px;
+		left: 0;
+		width: 100%;
+		display: block;
+		text-align: center;
+		z-index: 3;
+	}
+
+	.box {
+    position: absolute;
+		// text-align: center;
+    top: 50%;
+    left: 50%;
+    margin: -280px 0 0 -360px;
+    width: 720px;
+    height: 350px;
+    padding: 40px 170px 45px 180px;
+    color: #fff;
+		font: 14px/18px "Gill Sans MT";
+		z-index: 3;
+		background: url(/images/unit11_idx/area11_idx_bg.png);
+	}
+
+  .contxt {
+    margin: 10px 0 0 0;
+  }
+}

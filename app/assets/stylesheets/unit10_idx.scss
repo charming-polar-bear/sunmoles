@@ -1,0 +1,25 @@
+.certification {
+  .hline {
+      top: 240px;
+      min-width: 420px;
+
+      img {
+        // width: 500px;
+      }
+  }
+
+  .title {
+    text-align: center;
+    height: 200px;
+  }
+
+  .pics img {
+    width: 200px;
+  }
+
+  .contxt {
+    height: 100px;
+    font: 18px "Gill Sans MT";
+    color: #fff;
+  }
+}
