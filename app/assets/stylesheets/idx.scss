@@ -3,12 +3,17 @@
 }
 .idx .mainbg {
 	height: 900px;
+	position: absolute;
+	width: 100%;
+	display: block;
+	z-index: 1;
 }
 .idx .mainbg img {
 	min-width: 1268px;
 	_width:expression(document.body.clientWidth < 1268 ? "1268px" : "auto");
 	min-height: 900px;
 	_height:expression(this.scrollHeight < 900 ? "900px" : "auto");
+	width: 100%
 }
 .idx .hline {
 	position: absolute;
