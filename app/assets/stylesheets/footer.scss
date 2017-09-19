@@ -1,5 +1,59 @@
 .footer {
   background-color: #fff;
-  text-align: center;
-  font: 12px/18px "Gill Sans MT";
+
+  a:visited {
+    COLOR: #343434;
+    TEXT-DECORATION: none;
+  }
+
+  a:link {
+    COLOR: #343434;
+    TEXT-DECORATION: none;
+    outline-style: none;
+  }
+
+  .clear {
+    CLEAR: both;
+    MARGIN-TOP: -1px;
+    FONT-SIZE: 1px;
+    VISIBILITY: hidden;
+    WIDTH: 1px;
+    LINE-HEIGHT: 0;
+    HEIGHT: 0px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 4px 0px;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    min-width: 1100px;
+  }
+
+  .inner {
+    width: 1100px;
+    margin: 0px auto;
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+  }
+
+  .inner .left {
+    float: left;
+    width: 900px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .inner .left p {
+    padding: 6px 0px 14px 0px;
+    float: left;
+    font-family: "微软雅黑", Arial, Verdana, sans-serif;
+  }
+
+  .inner .right {
+    text-align: right;
+    width: 900px;
+    padding: 0px 0px 0px 0px;
+    float: right;
+  }
 }
