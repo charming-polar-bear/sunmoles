@@ -12,7 +12,7 @@
 			<!-- background url(iamges/unit1/area01_pt_bg.png) -->
 			    <div class="fresh"><img src="/images/unit1/area01_fresh.png" alt="" width="125" height="126"></div>
 					<ol>
-			        <li>
+			        <li class="with-mask">
 				        <a rel="shadowbox" href="images/unit1/area01_pt_02b.png">
 					        <img src="/images/unit1/area01_pt_02.png" alt="">
 					        <!-- <div class="add"></div> -->
@@ -70,3 +70,12 @@
 		    </div>
 		</div>
 </div>
+
+
+<script type="text/javascript">
+	$("a[rel=shadowbox").hover(function(){
+		$(this).find(".mask").stop().animate({opacity:0.5},600);
+	},function(){
+		$(this).find(".mask").stop().animate({opacity:0},600);
+	});
+</script>
