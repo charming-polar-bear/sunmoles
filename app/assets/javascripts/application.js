@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require shadowbox
 //= require bootstrap-sprockets
+//= require juery.scrollTo-min
+//= require jquery.localscroll-min
 //= require_tree .
