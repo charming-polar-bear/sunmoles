@@ -33,10 +33,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'shadowbox-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "rails-i18n"
 
 gem 'figaro'
 gem 'bootstrap-sass'
-
 gem "capistrano-passenger"
 
 group :production do
