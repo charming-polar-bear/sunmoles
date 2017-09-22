@@ -15,10 +15,9 @@
   </head>
 
   <body>
+    <%= yield %>
     <%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh-CN" %>
     <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
-
-    <%= yield %>
   </body>
 
 </html>
