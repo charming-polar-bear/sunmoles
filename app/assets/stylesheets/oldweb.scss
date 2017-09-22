@@ -1,0 +1,53 @@
+// Place all the styles related to the oldweb controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#oldweb {
+  background: #fff;
+
+  a:visited {
+    COLOR: #343434;
+    TEXT-DECORATION: none;
+  }
+  a:link {
+    COLOR: #343434;
+    TEXT-DECORATION: none;
+    outline-style: none;
+  }
+
+  .header-box {
+    width: 100%;
+    opacity: 1;
+    padding: 0px 0px;
+    min-width: 1002px;
+  }
+
+  .header-box .header {
+    width: 1100px;
+    margin: 0px auto;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header {
+    .left {
+      width: 220px;
+      overflow: hidden;
+      padding: 20px 0px 0px 0px;
+      color: #fff;
+      font-size: 14px;
+      float: left;
+    }
+  }
+
+  .header {
+    .logo {
+      width: 280px;
+      overflow: hidden;
+      padding: 18px 0px 0px 0px;
+      float: left;
+      margin: 0px 0px 0px 180px;
+    }
+  }
+
+}
