@@ -50,10 +50,11 @@
     font-family: "微软雅黑", Arial, Verdana, sans-serif;
   }
 
-  .inner .right {
-    text-align: right;
-    width: 900px;
+  .box .right {
+    // text-align: right;
+    vertical-align: middle;
+    width: 200px;
     padding: 0px 0px 0px 0px;
-    float: right;
+    // float: right;
   }
 }
