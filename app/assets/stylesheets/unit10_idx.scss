@@ -1,25 +1,146 @@
-.certification {
-  .hline {
-      top: 240px;
-      min-width: 420px;
-
-      img {
-        // width: 500px;
-      }
-  }
-
-  .title {
-    text-align: center;
-    height: 200px;
-  }
-
-  .pics img {
-    width: 200px;
-  }
-
-  .contxt {
-    height: 100px;
-    font: 18px "Gill Sans MT";
-    color: #fff;
-  }
+.unit10 {
+	height: 800px;
 }
+.unit10 .mainbg {
+	height: 1530px;
+}
+.unit10 .mainbg img {
+	min-width: 1102px;
+	_width:expression(document.body.clientWidth < 1102 ? "1102px" : "auto");
+	min-height: 1530px;
+	_height:expression(this.scrollHeight < 1530 ? "1530px" : "auto");
+}
+.unit10 .ptbg {
+    position: absolute;
+    top: 20px;
+    left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 1;
+}
+.unit10 .ptslide {
+    position: absolute;
+    top: 210px;
+    left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 2;
+}
+.unit10 .contxt {
+	position: absolute;
+	bottom: 305px;
+	left: 10%;
+	display: block;
+	right: 10%;
+	font: 12px/18px "Gill Sans MT";
+	color: #574634;
+	z-index: 2;
+    margin: 0 auto;
+	max-width: 900px;
+	_width:expression(document.body.clientWidth > 900 ? "900px" : "auto");
+}
+:root .unit10 .contxt {
+    width: 900px \0/IE9;
+}
+.unit10 .contxt .contxthd,
+.unit10 .contxt .contxtbd,
+.unit10 .contxt .contxtft {
+    margin: 0 0 10px 0;
+	padding: 0 8px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.unit10 .contxt .contxthd {
+    margin: 0 0 5px 0;
+}
+.unit10 .contxt .left {
+    float: left;
+	width: 47%;
+}
+.unit10 .contxt .right  {
+    float: right;
+	width: 47%;
+}
+.unit10 .contxt .contxthd img {
+    position: relative;
+    left: -8px;
+}
+.unit10 .contxt h1 {
+    margin: 0 0 5px 0;
+	font-size: 16px;
+	font-weight: normal;
+}
+.unit10 .contxt .phobox {
+    width: 895px;
+    margin: 40px auto 0 auto;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.unit10 .contxt .phobox .hd,
+.unit10 .contxt .phobox .bd,
+.unit10 .contxt .phobox .fd {
+    float: left;
+    margin: 0 12px 0 0;
+}
+.unit10 .contxt .phobox .fd {
+    width: 343px;
+    margin: 0;
+}
+.unit10 .contxt .phobox .ft img {
+    float: left;
+    margin: 0 0 12px 0;
+}
+.unit10 .contxt .phobox .bd img.last {
+    margin: 0;
+}
+.unit10 .ptslideft {
+    position: absolute;
+    bottom: -281px;
+    left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 1;
+}
+.unit10 .ptslideft img {
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+
+//old version
+
+// .certification {
+//   .hline {
+//       top: 240px;
+//       min-width: 420px;
+//
+//       img {
+//         // width: 500px;
+//       }
+//   }
+//
+//   .title {
+//     text-align: center;
+//     height: 200px;
+//   }
+//
+//   .pics img {
+//     width: 200px;
+//   }
+//
+//   .contxt {
+//     height: 100px;
+//     font: 18px "Gill Sans MT";
+//     color: #fff;
+//   }
+// }
+//
