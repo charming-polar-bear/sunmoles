@@ -27,6 +27,9 @@
     z-index: 3;
   }
 
+  .parallex .ptbg img {
+    width: 900px;
+  }
 
   .ptslide {
     position: absolute;
@@ -44,6 +47,11 @@
     left: 70px;
     z-index: 4;
   }
+
+  .ptslide .tag img {
+    width: 120px;
+  }
+
   .ptslide .slide {
     height: 100%;
     position: relative;
