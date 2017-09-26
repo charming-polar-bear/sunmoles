@@ -1,0 +1,382 @@
+// Place all the styles related to the oldweb controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*WeAre*/
+.WeAre
+{
+	background-color:#fff;
+}
+#WeAre_banner
+{
+	width:992px;
+	clear:both;
+	margin:0 auto;
+}
+#WeAre_left p.left_menu span.blue
+{
+	background-color:#6dcaf1;
+}
+#WeAre_left p#left02:hover span
+{
+	background-color:#94d3d3;
+}
+#WeAre_left p#left03:hover span
+{
+	background-color:#6dcaf1;
+}
+#WeAre_left p.left_menu span.red
+{
+	background-color:#ff6766;
+}
+#WeAre_left p.left_menu span.green
+{
+	background-color:#94d3d3;
+}
+#WeAre_left p#left01:hover span
+{
+	background-color:#ff6766;
+}
+#WeAre_left p.left_menu span
+{
+	height:45px;
+	line-height:45px;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	font-size:13px;
+	background:#949494;
+	cursor:pointer;
+	display:block;
+}
+#WeAre_banner img
+{
+	width:100%;
+}
+#WeAre_main
+{
+	width:992px;
+	margin:0 auto;
+	clear:both;
+}
+#WeAre_left
+{
+	width:160px;
+	padding-right:25px;
+	float:left;
+}
+#WeAre_left p.left_menu
+{
+	height:45px;
+	line-height:45px;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:20px;
+	background:#949494;
+	cursor:pointer;
+}
+#WeAre_left p.left_menu.blue
+{
+	background-color:#6dcaf1;
+}
+#WeAre_left p.left_menu.red
+{
+	background-color:#e60012;
+}
+#WeAre_left p.left_menu.green
+{
+	background-color:#a7cc09;
+}
+#WeAre_left p.left_sub_menu
+{
+	margin-bottom:20px;
+	display:none;
+}
+#WeAre_left p.left_sub_menu span
+{
+	height:65px;
+	line-height:100%;
+	color:#303030;
+	text-align:left;
+	font-weight:normal;
+	padding-left:34px;
+	font-size:14px;
+	margin-bottom:0;
+	cursor:pointer;
+	display:block;
+}
+#WeAre_left  p.left_sub_menu.blue span
+{
+	background:url("/images/oldweb/bg_leftmenu_blue.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/bg_leftmenu_blue.jpg*/ left 3px no-repeat;
+}
+#WeAre_left  p.left_sub_menu.red span
+{
+	background:url("/images/oldweb/bg_leftmenu_red.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/bg_leftmenu_red.jpg*/ left 3px no-repeat;
+}
+#WeAre_left  p.left_sub_menu.green span
+{
+	background:url("/images/oldweb/bg_leftmenu_green.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/bg_leftmenu_green.jpg*/ left 3px no-repeat;
+}
+#WeAre_left p#left01:hover
+{
+	background-color:#a7cc09;
+}
+#WeAre_left p#left02:hover
+{
+	background-color:#6dcaf1;
+}
+#WeAre_left p#left03:hover
+{
+	background-color:#e60012;
+}
+#WeAre_right
+{
+	width:805px;
+	float:right;
+	border-left:2px solid #cccccc;
+}
+.WeAre_sign
+{
+	height:152px;
+	text-align:right;
+	padding-top:18px;
+}
+.WeAre_title
+{
+	height:55px;
+	margin-bottom:36px;
+}
+.clear
+{
+	clear:both;
+}
+
+.WeAre_content
+{
+	padding:0 0 60px 128px;
+	font-size:14px;
+	line-height:160%;
+	color:#686868;
+}
+.WeAre_content p
+{
+	font-size:14px;
+	line-height:160%;
+	color:#504f4e;
+}
+.WeAre_content .blue
+{
+	color:#078bcf;
+	font-size:14px;
+}
+.WeAre_content .gold
+{
+	color:#b28659;
+	font-size:14px;
+}
+.WeAre_content .red
+{
+	color:#ff6060;
+	font-size:14px;
+}
+.WeAre_content .green
+{
+	color:#488c1d;
+	font-size:14px;
+}
+.WeAre_sub_title
+{
+	margin-bottom:45px;
+}
+.WeAre_num01
+{
+	background:url("/images/oldweb/icon_num_1.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/icon_num_1.jpg*/ 0 0 no-repeat;
+}
+.WeAre_num02
+{
+	background:url("/images/oldweb/icon_num_2.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/icon_num_2.jpg*/ 0 0 no-repeat;
+}
+.WeAre_num03
+{
+	background:url("/images/oldweb/icon_num_3.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/icon_num_3.jpg*/ 0 0 no-repeat;
+}
+.WeAre_num04
+{
+	background:url("/images/oldweb/icon_num_4.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/icon_num_4.jpg*/ 0 0 no-repeat;
+}
+.WeAre_sub_list li
+{
+	padding:2px 0 20px 30px;
+	font-size:14px;
+	line-height:160%;
+	color:#686868;
+}
+.WeAre_sub_list li.WeAre_num01 img
+{
+	margin-top:10px;
+}
+.WeAre_sub_list li.WeAre_num02 ul li
+{
+	padding:15px 0 0 25px;
+	background:url("/images/oldweb/dealer_icon01.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_icon01.jpg*/ 0 17px no-repeat;
+}
+.WeAre_line01, .WeAre_line02, .WeAre_line03
+{
+	height:6px;
+	background:url("/images/oldweb/dealer_sub_line01.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_sub_line01.jpg*/ no-repeat;
+	margin:-45px 0 15px;
+	position:relative;
+}
+.WeAre_line02
+{
+	background:url("/images/oldweb/dealer_sub_line02.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_sub_line02.jpg*/ no-repeat;
+}
+.WeAre_line03
+{
+	background:url("/images/oldweb/dealer_sub_line03.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_sub_line03.jpg*/ no-repeat;
+}
+.WeAre_content h3
+{
+	font-size:20px;
+	height:20px;
+	line-height:100%;
+	padding-left:13px;
+	margin-bottom:15px;
+}
+.dealer_title_red
+{
+	border-left:2px solid #ff6060;
+	color:#ff6060;
+}
+.dealer_title_green
+{
+	border-left:2px solid #a2ca4b;
+	color:#a2ca4b;
+}
+.dealer_title_yellow
+{
+	border-left:2px solid #eab440;
+	color:#eab440;
+}
+.WeAre_content p.dealer_pic
+{
+	margin-bottom:25px;
+}
+.WeAre_content p.dealer_title
+{
+	margin-bottom:15px;
+}
+.WeAre_content p.dealer_txt
+{
+	font-size:17px;
+}
+#right_dealer, #right_productor
+{
+	display:none;
+}
+.WeAre_content p.WeAre_note
+{
+	font-size:12px;
+	padding-left:126px;
+	margin-top:-70px;
+	position:relative;
+	background:url("/images/oldweb/dealer_bg_left01.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_bg_left01.jpg*/ 25px 0 no-repeat;
+}
+.WeAre_sub_list02
+{
+	margin:10px 0 20px;
+}
+.WeAre_sub_list02 li
+{
+	padding:2px 0 10px 30px;
+	font-size:14px;
+	line-height:160%;
+	color:#686868;
+}
+.dealer_num02_1, .dealer_num02_2
+{
+	width:290px;
+	height:54px;
+	line-height:54px;
+	display:inline-block;
+	padding-left:66px;
+	font-size:12px;
+	color:#686868;
+	background:url("/images/oldweb/dealer_num02_1.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_num02_1.jpg*/ left no-repeat;
+}
+.dealer_num02_2
+{
+	width:auto;
+	background:url("../images/oldweb/dealer_num02_2.jpg")/*tpa=http://www.danlu.com/resources/images/home/newIndex/dealer_num02_2.jpg*/ left no-repeat;
+}
+.productor_sub_title
+{
+	margin-top:-30px;
+}
+.productor_sub_title img
+{
+	margin-top:15px;
+}
+.terminal_sub_title
+{
+	margin-bottom:10px;
+}
+
+
+.top-bg-color{ 	position: fixed;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;background:url("../images/oldweb/png.png")/*tpa=http://www.danlu.com/resources/images/home/png.png*/ repeat;}
+.pop-up{ position:absolute; top:50%; left:50%;width:410px; height:500px; border-radius:7px; padding:7px;background:rgba(0,0,0,0.2);margin:-250px 0 0 -205px;}
+
+.pop-up-login{ background: #fff;width:100%;height:100%; }
+.pop-up-login h2{background:#f3f3f3;height:35px; text-align:right;}
+.pop-up-login h2 img{ margin:7px 10px 0 0;cursor: pointer;}
+.pop-up-login-con{background:url("../images/oldweb/joinus.jpg")/*tpa=http://www.danlu.com/resources/images/home/joinus.jpg*/ no-repeat center 20px ; padding-top:320px;}
+.pop-up-login-con h3{ text-align:center; font-size: 16px; font-weight: lighter; color:#444;}
+.pop-up-login-bt{ position: relative; height:35px; margin-top:20px;}
+.big-button{	display: block;
+	width:150px;
+	height:35px;background: #e60042;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height:35px;
+	margin: 0 auto;}
+.contButton{ position: absolute; top:5px; right:60px; font-size: 14px; color:#e60042;}
+
+
+/*新*/
+.c{
+	text-shadow:1px 1px 2px #ccc;
+}
+.WeAre_title{background:url(/images/oldweb/tit_bg.png) center repeat-x;height:39px;}
+.WeAre_title .weare_tit{line-height: 39px;background:#fff;margin-left: 55px;padding:0 8px;display: inline-block;font-size: 16px;color:#504f4e;}
+.WeAre_title .weare_tit .tit_icon{float:left;margin:1px 23px 1px 0;display: inline-block;width:37px;height:37px;background:url(/images/oldweb/tit_icon.png);}
+#WeAre_left{margin-top: 18px!important;}
+.WeAre_content p{
+	margin:10px 0;
+	margin-top: 1em;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+.WeAre_content p span {
+	font-size: 14px;
+	color:#504f4e;
+}
+.WeAre_content p span.point{
+	font-size: 14px;
+	margin-right: 10px;
+}
+.xh{display: inline-block;width:25px;heiht:25px;background:#a4a3a3;text-align: center;line-height: 25px;color:#fff;border-radius: 50%;margin-right: 1em;color:#fff!important;}
+.WeAre_content .mt50{margin-left:50px;}
+.rzsq{width:355px;margin-top: 10px;margin-bottom: 20px;overflow: hidden;}
+.rzsq .left{width:192px;height:25px;line-height: 25px;text-align: right;padding:0 10px;border-radius:17.5px 0 0 17.5px;background:#94d3d3;color:#fff;font-size: 14px;}
+.rzsq .right{width:122px;height:25px;line-height: 25px;padding:0 10px;border-radius: 0 17.5px 17.5px 0;background:#ff6766;color:#fff;font-size: 14px;}
+.WeAre_content ul{margin-top: 10px;margin-bottom: 20px;}
+.WeAre_content ul li{font-size: 14px;color:#504f4e;}
+.WeAre_content ul li img{display: inline-block;float: left;margin-top: 4.5px;margin-right: 1em;}
