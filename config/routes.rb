@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'brand' => 'oldweb#brand'
-  get 'contacts' => 'oldweb#contacts'
-  get 'bd' => 'oldweb#bd'
+  get 'join-us' => 'oldweb#join-us'
   get 'declaration' => 'oldweb#declaration'
 
   get "/query" => "security#index"

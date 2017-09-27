@@ -19,7 +19,9 @@
     <%= yield %>
     <div class="text-center">
       <%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh-CN" %>
-      <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
+      <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en-US" %>
+      <%= link_to "韩文", :controller => controller_name, :action => action_name, :locale => "ko" %>
+      <%= link_to "繁体", :controller => controller_name, :action => action_name, :locale => "zh-CHT" %>
     </div>
   </body>
 
