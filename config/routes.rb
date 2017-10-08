@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get "/security" => "security#result"
   get '/fangwei' => "security#fangwei"
 
+  get '/test' => "security#test"
+
   root 'landing_page#index'
 end
