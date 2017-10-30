@@ -28,7 +28,8 @@
   }
 
   .parallex .ptbg img {
-    width: 900px;
+    // width: 900px;
+    margin-top: 50px;
   }
 
   .ptslide {
@@ -57,7 +58,7 @@
     position: relative;
     text-align: center;
     margin: 0 auto;
-    margin-left: 100px;
+    // margin-left: 100px;
     width: 100%
   }
 
@@ -73,6 +74,10 @@
     margin: 0 10px;
     border: 0;
   }
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
 
 .unit2 {
