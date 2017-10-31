@@ -15,6 +15,12 @@
 	_height:expression(this.scrollHeight < 900 ? "900px" : "auto");
 	width: 100%
 }
+
+.idx .mainbg img.bottom {
+	position: absolute;
+	bottom: 0px;
+}
+
 .idx .hline {
 	position: absolute;
 	left: 0;
