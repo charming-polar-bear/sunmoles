@@ -1,7 +1,9 @@
 <div class="unit1">
 	    <div class="parallex" style="height:800px;">
 	    	<div class="mainbg" data-parallex-distance="2" style="top: 45px;"><img src="/images/unit1/area01_02.png" alt=""></div>
-	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 50px;"><img src="/images/unit1/area01_txt_bg.png" alt=""></div>
+	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 50px;">
+					<%= image_tag "/images/unit1/area01_txt_bg_#{I18n.locale}.png" %>
+				</div>
 	    </div>
 		<div class="ptslide">
 			<div class="" style="height:18px;" >
@@ -9,8 +11,9 @@
 			</div>
 			<div class="bg">
 			<div class="bgbox">
-			<!-- background url(iamges/unit1/area01_pt_bg.png) -->
-			    <div class="fresh"><img src="/images/unit1/area01_fresh.png" alt="" width="125" height="126"></div>
+			    <div class="fresh">
+						<%= image_tag "/images/unit1/area01_fresh_#{I18n.locale}.png", style: 'width: 125px; height: 126px;'%>
+					</div>
 					<ol>
 			        <li class="with-mask">
 				        <a rel="shadowbox" href="images/unit1/area01_pt_02b.png">
