@@ -1,16 +1,19 @@
 <div class="unit1">
-	    <div class="parallex">
+	    <div class="parallex" style="height:800px;">
 	    	<div class="mainbg" data-parallex-distance="2" style="top: 45px;"><img src="/images/unit1/area01_02.png" alt=""></div>
-	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 50px;"><img src="/images/unit1/area01_txt_bg.png" alt=""></div>
+	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 80px;">
+					<%= image_tag "/images/unit1/area01_txt_bg_#{I18n.locale}.png" %>
+				</div>
 	    </div>
 		<div class="ptslide">
-			<div class="" style="height:394px;" >
+			<div class="" style="height:18px;" >
 				<img src="/images/unit1/area01_pt_01.png" alt="">
 			</div>
 			<div class="bg">
 			<div class="bgbox">
-			<!-- background url(iamges/unit1/area01_pt_bg.png) -->
-			    <div class="fresh"><img src="/images/unit1/area01_fresh.png" alt="" width="125" height="126"></div>
+			    <div class="fresh">
+						<%= image_tag "/images/unit1/area01_fresh_#{I18n.locale}.png", style: 'width: 125px; height: 126px;'%>
+					</div>
 					<ol>
 			        <li class="with-mask">
 				        <a rel="shadowbox" href="images/unit1/area01_pt_02b.png">
@@ -51,24 +54,6 @@
 		    </div>
 		</div>
 	</div>
-		<div class="contxt">
-		    <div class="contxtft">
-		        <div class="left">
-			        <h1> <%= t("area01_left_h") %></h1>
-							<p>  <%= t("area01_left_p1") %></p>
-							<p>  <%= t("area01_left_p2") %></p>
-							<p>  <%= t("area01_left_p3") %></p>
-							<p>  <%= t("area01_left_p4") %></p>
-						</div>
-		        <div class="right">
-							<h1><%= t('area01_right_h') %></h1>
-							<p><%= t('area01_right_p1') %></p>
-							<p><%= t('area01_right_p2') %></p>
-							<p><%= t('area01_right_p3') %></p>
-							<p><%= t('area01_right_p4') %></p>
-		        </div>
-		    </div>
-		</div>
 </div>
 
 

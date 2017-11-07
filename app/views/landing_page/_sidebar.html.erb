@@ -1,25 +1,29 @@
 <div id="menubox">
   <div class="logo">
-    <%= image_tag 'sidebar/logo.png', alt:'sun moles', id:'logo' %>
+    <%#= image_tag "sidebar/logo_#{I18n.locale}.png", alt:'sun moles', id:'logo' %>
+    <%= image_tag "sidebar/logo_zh.png", alt:'sun moles', id:'logo' %>
   </div>
   <ul id="menu">
     <li> <a class="idea" href="#idea"> </a> </li>
     <li> <a class="beauty" href="#beauty"> </a> </li>
     <li> <a class="product" href="#product"> </a>
   			<ul>
-  				<li><a href="#product01">01.<span>玻尿酸补水沁润面膜</span></a></li>
-  				<li><a href="#product02">02.<span>竹炭净透面膜</span></a></li>
-  				<li><a href="#product03">03.<span>雪颜靓白面膜</span></a></li>
-  				<li><a href="#product04">04.<span>紧致修护面膜</span></a></li>
-  				<li><a href="#product05">05.<span>舒缓润泽面膜</span></a></li>
+  				<li><a href="#product01">01.<span><%= t("production_1") %></span></a></li>
+  				<li><a href="#product02">02.<span><%= t("production_2") %></span></a></li>
+  				<li><a href="#product03">03.<span><%= t("production_3") %></span></a></li>
+  				<li><a href="#product04">04.<span><%= t("production_4") %></span></a></li>
+  				<li><a href="#product05">05.<span><%= t("production_5") %></span></a></li>
   			</ul>
   	</li>
-    <li><a class='about' href="#about"> <img src="/images/sidebar/about.png" alt="about"> </a></li>
-    <li><a class="history" href="#history"> <img src="/images/sidebar/history.png" alt="history"> </a></li>
-    <li><a class="join-us" href="#join-us"> <img src="/images/sidebar/join-us.png" alt="join us"> </a></li>
-    <li><a class="access" href="#access"> <img src="/images/sidebar/access.png" alt="access"> </a></li>
+    <li><a class='about' href="#about"></a></li>
+    <li><a class="history" href="#history"></a></li>
+    <li><a class="join-us" href="#join-us"></a></li>
+    <li><a class="access" href="#access"></a></li>
   </ul>
-  <div class="logo-footer"><img src="/images/sidebar/logo-footer.png" alt=""></div>
+  <div class="logo-footer">
+    <%#= image_tag "/images/sidebar/logo_footer_#{I18n.locale}.png" %>
+    <%= image_tag "/images/sidebar/logo_footer_zh.png" %>
+  </div>
 </div>
 
 

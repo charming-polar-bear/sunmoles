@@ -1,26 +1,36 @@
 .unit9_idx {
-	.ptbg {
+	.certification {
 		position: absolute;
-		top: 26px;
-		left: 0;
-		width: 100%;
+		left: 10%;
+		width: 350px;
 		display: block;
-		text-align: center;
 		z-index: 3;
+
+		img {
+			width: 250px;
+		}
 	}
 
 	.box {
     position: absolute;
-		text-align: center;
-    top: 50%;
-    left: 50%;
-    margin: -80px 0 0 -360px;
-    width: 720px;
-    height: 350px;
-    padding: 40px 70px 45px 80px;
-    color: #756b5f;
-		font: 12px/18px "Gill Sans MT";
+    top: 3px;
+    left: 40%;
+		display: block;
+		width: 420px;
 		z-index: 3;
-		background: url(/images/unit9_idx/area09_idx_bg.png);
+		padding: 30px 0px 0px 0px;
+		text-align: center;
+    // // margin: -80px 0 0 -360px;
+    // width: 720px;
+    // height: 350px;
+    // padding: 40px 70px 45px 80px;
+    // color: #756b5f;
+		// font: 12px/18px "Gill Sans MT";
+		// z-index: 3;
+		// background: url(/images/unit9_idx/area09_idx_bg.png);
+
+		img {
+			width: 600px;
+		}
 	}
 }

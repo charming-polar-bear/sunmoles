@@ -1,7 +1,9 @@
 <div class="unit4">
 	    <div class="parallex">
 	    	<div class="mainbg" data-parallex-distance="2" style="top: -39px;"><img src="/images/unit4/area04_02.png" alt=""></div>
-	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 4px;"><img src="/images/unit4/area04_txt_bg.png" alt=""></div>
+	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 4px;">
+					<%= image_tag "/images/unit4/area04_txt_bg_#{I18n.locale}.png" %>
+				</div>
 		</div>
 
 		<div class="ptslide">
@@ -26,44 +28,31 @@
           </div>
         </div>
       </div>
-			<!-- easyslider 在此長出 numeric -->
-			<div class="tag">
-				<img src="/images/unit4/area04_tag.png" alt="">
-			</div>
-		</div>
-		<!-- 雪颜靓白面膜 -->
-		<div class="contxt">
-				<div class="contxthd text-center">
-						<h1><%= t("area04_contxthd") %></h1>
-				</div>
-				<div class="contxtbd">
-						<div class="left"><%= t('area04_contxtbd_left') %></div>
-						<div class="right">
-							<%= t("area04_contxtbd_right0") %>:<br> <%= t("area04_contxtbd_right1") %>
-							<!-- <br><br> 适应人群：<br> 适合各种肌肤，孕妇及敏感性肌肤均可使用。  -->
-						</div>
-				</div>
-				<div class="contxtft">
-						<%= t('area04_contxtft0') %>: <br>
-						<%= t('area04_contxtft_p1') %>
-				</div>
 		</div>
 
-		<!-- <div class="contxt">
-				<div class="contxthd text-center">
-						<h1>美白滋润  温和修护  改善肤质  孕妈可用 </h1>
+		<!-- 雪颜靓白面膜 -->
+		<div class="contxt">
+				<div class="contxthd">
+					<div class="left">
+						<h1><%= t("main_ingredient") %></h1>
+					</div>
+					<div class="right">
+						<h1><%= t("function") %></h1>
+					</div>
 				</div>
 				<div class="contxtbd">
-						<div class="left">以维生素B3为主要成分，创新性融入乳酸菌成分，改善肤质，实现肌肤自身优化循环，同时滋润、修护，美白肌肤，天然无伤害。 </div>
+						<div class="left">
+							<%= t("main_ingredient_unit4") %>
+							<!-- 维生素B3、乳酸菌等成分。 -->
+							<!-- 비타민B3 젖산균등성분 -->
+							<!-- Vitamin B3, lactic acid bacteria -->
+						</div>
 						<div class="right">
-							主要成分：<br> 维生素B3、乳酸菌等成分。
-							<br><br> 适应人群：<br> 适合各类肤质，孕妇及敏感性肌肤均可使用。
+							<%= t("function_unit4") %>
+							<!-- 抑制黑色素及炎症，活化肌肤细胞，加速皮肤蛋白质增长，深层滋润、修护并美白肌肤。 -->
+							<!-- 멜라닌과 염증을 억제하고 피부세포를 활성화시키고 피부단백질의 증장을 가속하며 심층보습 호리하고 미백해준다.  -->
+							<!-- Inhibit melanin and inflammation, activate skin cells, accelerate skin protein growth, deep moisturizing, repair and whitening skin. -->
 						</div>
 				</div>
-				<div class="contxtft">
-						功效及成分: <br>
-维生素B3能够抑制黑色素产生、抑制炎症，增强肌肤自生的保湿功能，恢复水油平衡，加速人体肌肤的新陈代谢、促进表面皮肤内蛋白质增长。
-创新性融入乳酸菌温和成分，同时滋润、修护，美白肌肤，天然无伤害，使肌肤柔嫩、细腻。
-				</div>
-		</div> -->
+		</div>
 </div>

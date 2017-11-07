@@ -1,7 +1,9 @@
 <div class="unit6">
 	    <div class="parallex">
 	    	<div class="mainbg" data-parallex-distance="2" style="top: -39px;"><img src="/images/unit6/area06_02.png" alt=""></div>
-	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 4px;"><img src="/images/unit6/area06_txt_bg.png" alt=""></div>
+	    	<div class="ptbg" data-parallex-distance="1.5" style="top: 4px;">
+					<%= image_tag "/images/unit6/area06_txt_bg_#{I18n.locale}.png" %>
+				</div>
 		</div>
 
 		<div class="ptslide">
@@ -26,47 +28,34 @@
           </div>
         </div>
       </div>
-			<!-- easyslider 在此長出 numeric -->
-			<div class="tag">
-				<img src="/images/unit6/area06_tag.png" alt="">
-			</div>
-		</div>
+    </div>
 
+		<!-- 舒缓润泽 -->
 		<div class="contxt">
-				<div class="contxthd text-center">
-						<h1><%= t("area06_contxthd") %></h1>
-				</div>
-				<div class="contxtbd">
-						<div class="left"><%= t('area06_contxtbd_left') %></div>
-						<div class="right">
-							<%= t("area06_contxtbd_right0") %>:<br> <%= t("area06_contxtbd_right1") %>
-							<!-- <br><br> 适应人群：<br> 适合各种肌肤，孕妇及敏感性肌肤均可使用。  -->
-						</div>
-				</div>
-				<div class="contxtft">
-						<%= t('area06_contxtft0') %>: <br>
-						<%= t('area06_contxtft_p1') %>
-				</div>
-		</div>
-<!--
-		<div class="contxt">
-				<div class="contxthd text-center">
-						<h1>
-							镇定消炎  杀菌修护  舒缓保湿  孕妈可用
-						</h1>
+				<div class="contxthd">
+					<div class="left">
+						<h1><%= t("main_ingredient") %></h1>
+					</div>
+					<div class="right">
+						<h1><%= t("function") %></h1>
+					</div>
 				</div>
 				<div class="contxtbd">
 						<div class="left">
-							以谷胱甘肽、芦荟精华、植物杀菌素等三大天然原料，依照科学比例完美配比，实现补水保湿、镇定敏感肌肤、杀菌修护等多重功效，水润呵护缺水敏感肌肤，使其回归自然润泽状态。
+							<%= t("main_ingredient_unit6") %>
+							<!-- 谷胱甘肽、芦荟精华、植物杀菌。 -->
+							<!-- 글루타티온 알로에정화 식물살균(phytocide) -->
+							<!-- Glutathione, aloe vera essence, plant sterilization. -->
 						</div>
-						<div class="right">主要成分：<br>
-							谷胱甘肽、芦荟精华、植物杀菌等三大天然原料。
-							<br><br>适应人群：<br> 适合晒后修复、红血丝等问题的各种肌肤，孕妇及敏感性肌肤均可使用。
+						<div class="right">
+							<%= t("function_unit6") %>
+							<!-- 具有镇定保湿效果，并增强肌肤免疫力功效，帮助肌肤杀菌修护。多重作用镇定敏感肌肤，实现舒缓润泽功效。 -->
+							<!-- 피부를 진정시키고 보습한는 효과가 있고 피부의 면역력을 강화한다. 다중적으로 민감한 피부를 진정시킨다. -->
+							<!-- With calm and moisturizing effects, enhance skin immunity, help skin sterilization repair. Multiple effects calm the sensitive skin, to achieve soothing moisturizing effect. -->
 						</div>
 				</div>
-				<div class="contxtft">
-						功效及成分: <br>
-						含有医学保湿成分，芦荟原液具有镇定保湿效果；谷胱甘肽具有抗氧化，增强肌肤免疫力功效。植物杀菌素能帮助肌肤杀菌修护，适合敏感肌肤。镇定肌肤具有镇定功效，改善肌肤痛痒问题，有效呵护敏感肌肤。
-				</div>
-		</div> -->
+		</div>
+	</div>
+
+
 </div>

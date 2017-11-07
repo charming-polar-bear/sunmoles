@@ -1,15 +1,14 @@
 <div class="idx">
 		<div class="lang">
-			<!-- <a href="#">中文 - Enligh </a>/<a href="#"> 日本語 - Enligh</a> -->
 			<%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh-CN" %>
 			<%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
 		</div>
 	    <div class="parallex">
-		    <div class="mainbg" data-parallex-distance="2" style="top: 0px;"><img class="bottom" src="/images/unit1_idx/area01_01.jpeg" alt=""></div>
+		    <div class="mainbg" style="top: 0px;"><img class="bottom" src="/images/unit1_idx/area01_01.jpg" alt=""></div>
 	    </div>
 		<div class="hline">
 		    <a class="unit1" href="#product">&nbsp;</a>
-			<img src="/images/unit1_idx/area01_idx_h.png" alt="">
+			<%= image_tag "/images/unit1_idx/area01_idx_h_#{I18n.locale}.png", style: "height: 400px;" %>
 			<img class="arrow" src="/images/dot_down.png" alt="" id="dotdown" style="opacity: 0; top: 325px;">
 		</div>
 	</div>
