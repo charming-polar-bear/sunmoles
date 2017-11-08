@@ -20,7 +20,8 @@
   area11_contxthd_1: "중국법인: 재아(저장성)화장품유한회사"
   area11_contxthd_2: "주소: 저장성닝보시인저우구화월국제빌딩3층"
   area11_contxthd_3: "전화번호: 4000128778"
-  area11_contxthd_5: "이메일 주소：SERVICES@SUNMOLES.COM"
+  # area11_contxthd_5: "이메일 주소：SERVICES@SUNMOLES.COM"
+  area11_contxthd_5: "이메일 주소：services@sunmoles.com"
 
   production_1: 히알루론산보습마스크팩
   production_2: 죽탄마스크팩
