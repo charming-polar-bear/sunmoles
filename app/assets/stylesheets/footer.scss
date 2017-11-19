@@ -31,7 +31,7 @@
   }
 
   .inner {
-    width: 1100px;
+    width: 1200px;
     margin: 0px auto;
     font-size: 12px;
     color: #666;
@@ -52,6 +52,7 @@
 
   .box .right {
     // text-align: right;
+    display: inline-block;
     vertical-align: middle;
     width: 200px;
     padding: 0px 0px 0px 0px;
