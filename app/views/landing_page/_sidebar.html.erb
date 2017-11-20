@@ -4,9 +4,9 @@
     <%= image_tag "sidebar/logo_zh.png", alt:'sun moles', id:'logo' %>
   </div>
   <ul id="menu">
-    <li> <a class="idea" href="#idea"> </a> </li>
-    <li> <a class="beauty" href="#beauty"> </a> </li>
-    <li> <a class="product" href="#product"> </a>
+    <li> <a class="idea-<%= I18n.locale %>" href="#idea"> </a> </li>
+    <li> <a class="beauty-<%= I18n.locale %>" href="#beauty"> </a> </li>
+    <li> <a class="product-<%= I18n.locale %>" href="#product"> </a>
   			<ul>
   				<li><a href="#product01">01.<span><%= t("production_1") %></span></a></li>
   				<li><a href="#product02">02.<span><%= t("production_2") %></span></a></li>
@@ -16,9 +16,9 @@
   			</ul>
   	</li>
     <!-- <li><a class='about' href="#about"></a></li> -->
-    <li><a class="history" href="#history"></a></li>
-    <li><a class="join-us" href="#join-us"></a></li>
-    <li><a class="access" href="#access"></a></li>
+    <li><a class="history-<%= I18n.locale %>" href="#history"></a></li>
+    <li><a class="join-us-<%= I18n.locale %>" href="#join-us"></a></li>
+    <li><a class="access-<%= I18n.locale %>" href="#access"></a></li>
   </ul>
   <div class="logo-footer">
     <%#= image_tag "/images/sidebar/logo_footer_#{I18n.locale}.png" %>
