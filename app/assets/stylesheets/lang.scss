@@ -1,0 +1,35 @@
+.lang {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  width: 140px;
+  height: 144px;
+  z-index: 99;
+}
+
+.lang a{
+  position: absolute;
+  display: block;
+  width: 140px;
+  line-height: 45px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+
+}
+
+
+.lang a.lang-ko {
+  top: 0px;
+  height: 38px;
+}
+
+.lang a.lang-zh {
+  top: 39px;
+  height: 38px;
+}
+
+.lang a.lang-en {
+  top: 77px;
+  height: 38px;
+}
