@@ -1,0 +1,15 @@
+
+  @each $locale in (zh, en, ko){
+    .idx .hline a.more-#{$locale} {
+      // text-indent: -10000px;
+      background: url(/images/unit8_idx/more_#{$locale}.png) no-repeat;
+      // background-size: 94px 38px;
+    }
+
+    .idx .hline a:hover.more-#{$locale} {
+      // text-indent: -10000px;
+      background: url(/images/unit8_idx/more_v_#{$locale}.png) no-repeat;
+      // background-size: 94px 38px;
+    }
+
+  }
