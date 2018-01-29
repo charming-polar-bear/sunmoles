@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Disclaimer Declaration.</title>
+    <%= favicon_link_tag '/myicon.png' %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body id="oldweb" style="background-color: #fff;">
+    <%= render 'oldheader' %>
+    <%= yield %>
+    <%= render 'footers/footer_zh' %>
+  </body>
+
+</html>

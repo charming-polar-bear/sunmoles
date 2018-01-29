@@ -1,11 +1,16 @@
 class OldwebController < ApplicationController
-  layout 'oldweb'
-  def brand
-  end
+  # layout 'oldweb'
+  layout "declaration", :only => [:declaration]
+  # def brand
+  # end
+  #
+  # def contacts
+  # end
+  #
+  # def bd
+  # end
 
-  def contacts
-  end
+  def declaration
 
-  def bd
   end
 end
