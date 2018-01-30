@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sunmoles</title>
+    <title>SUNMOLES</title>
+    <%= favicon_link_tag '/myicon.png' %>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -10,8 +11,10 @@
 
   <body id="oldweb" style="background-color: #fff;">
     <%= render 'oldheader' %>
+
     <%= yield %>
-    <%= render 'footers/footer_zh' %>
+
+    <%= render "footers/footer_#{I18n.locale}" %>
   </body>
 
 </html>

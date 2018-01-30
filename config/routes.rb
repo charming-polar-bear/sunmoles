@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'join-us' => 'oldweb#join-us'
   get 'declaration' => 'oldweb#declaration'
+  get 'mifsola' => 'oldweb#mifsola'
+  get 'more' => 'oldweb#more'
+  
   #
   get "/query" => "security#index"
   get "/security" => "security#result"
